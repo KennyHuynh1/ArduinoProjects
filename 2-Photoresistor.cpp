@@ -1,9 +1,14 @@
 #include <Arduino.h>
 
+/**
+ * When the ambient light is low, the LED turns on.
+ * 
+ */
+
 int LEDPin = 13;
 int sensorPin = A5;
 int sensorValue = 0;
-float Rref = 220; // 200 ohm
+float Rref = 220; // 220 ohm
 float Vin = 5; // 5 volts
 float Vphoto = 0;
 float Rphoto = 0;
